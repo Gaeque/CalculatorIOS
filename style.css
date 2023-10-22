@@ -1,0 +1,93 @@
+* {
+  font-family: helvetica;
+  font-size: 32px;
+  margin: 0px;
+}
+
+html,
+body #fullheight {
+  min-width: 100%;
+  height: 100%;
+}
+
+.iphone {
+  width: 340px;
+  height: 600px;
+  background-color: black;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  border-radius: 52px;
+}
+
+.container {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  grid-template-columns: repeat(4, 60px);
+  grid-template-rows: repeat(5, 60px);
+  gap: 10px;
+  margin-top: 144px;
+}
+
+button {
+  border-radius: 50px;
+  cursor: pointer;
+  border: none;
+  opacity: 0.9;
+}
+
+button:hover {
+  background-color: #c8c8c8;
+  opacity: 1;
+  transition: 0.3s;
+}
+
+.button-grey {
+  background-color: #c5c5c5;
+  color: black;
+}
+
+.button-default {
+  background-color: #313131;
+  color: white;
+}
+
+.button-yellow {
+  background-color: #f69a06;
+  color: white;
+}
+
+.button-0 {
+  grid-column: span 2;
+  text-align: start;
+}
+
+.button0 {
+  position: relative;
+  left: 14px;
+}
+
+.result {
+  color: white;
+  font-size: 60px;
+  padding: 0px;
+  margin: 0px;
+  display: flex;
+  justify-content: end;
+  position: relative;
+  top: 138px;
+  right: 12px;
+}
+
+.line-footer::after {
+  content: " ";
+  display: block;
+  width: 108px;
+  height: 4px;
+  background-color: rgb(255, 255, 255);
+  position: relative;
+  left: 80px;
+  bottom: -10px;
+  border-radius: 100px;
+}
